@@ -1,0 +1,104 @@
+.main{
+  width: 420px;
+  height: 560px;
+  position: absolute;
+  border: 1px rgb(26, 115, 233) solid;
+  background-color: rgb(238, 238, 238);
+  margin: 50px 36%;
+  box-shadow: 10px 10px 5px rgb(219, 219, 219);
+}
+.nav{
+  background-color: white;
+  width: 420px;
+  height: 30px;
+}
+.nav p{
+  float: left;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.nav span{
+  margin-top: 2px;
+  margin-left: 360px;
+  float: left;
+  font-size: 18px;
+}
+.entitle{
+  margin-top: 7px;
+  font-size: 13px;
+  height: 18px;
+}
+.entitle p{
+  float: left;
+}
+.tit1{
+  margin-left: 12px;
+}
+.tit2{
+  margin-left: 148px;
+}
+.tit3{
+  margin-left: 102px;
+}
+.external{
+  margin-left: 8px;
+}
+.instance{
+  position: relative;
+  margin-left: 12px;
+  margin-top: 30px;
+  height: 105px;
+  width: 210px;
+  padding-left: 15px;
+  border: 1px rgb(107, 107, 107) solid;
+}
+.instance p{
+  position: absolute;
+  padding: 0 5px;
+  font-size: 13px;
+  top:-10px;
+  left: 10px;
+  background-color: rgb(238, 238, 238);
+}
+.change{
+  margin-top: 10px;
+  font-size: 8px;
+  overflow: hidden;
+  font-weight:'常规';
+  font-style: 'Agency FB';
+}
+.footer{
+  margin-left: 12px;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.footer select{
+  margin-top: 5px;
+  height: 23px;
+  width: 230px;
+}
+.btn{
+  float: left;
+  margin-top: 100px;
+  margin-left: 240px;
+}
+.btn input{
+  width: 75px;
+  height: 28px;
+}
+.btn-cancel{
+  margin-left: 10px;
+}
+.external{
+  height: 140px;
+}
+.external div{
+  float: left;
+}
+.list2{
+  margin-left: 15px;
+}
+.list3{
+  margin-left: 15px;
+}

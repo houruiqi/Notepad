@@ -1,0 +1,65 @@
+ul li{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1.5px solid rgb(236, 236, 236);
+}
+.menu ul li{
+    list-style:none;
+    float: left;
+    margin-top: 5px;
+    font-size: 11px;
+    padding: 0 10px;
+    cursor:default;
+}
+.box{
+    width: 200px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 3px 2px rgb(219, 219, 219);
+    position: absolute;
+    top:31.5px;
+}
+.file{
+    height: 208px;
+    display: none;
+}
+.box ul li{
+    width: 180px;
+    line-height: 20px;
+    /* background-color: rgb(42, 175, 252); */
+
+}
+.leftp{
+    float: left;
+    margin-left: 20px;
+}
+.rightp{
+    float: right;
+    margin-right: 5px;
+}
+.bottom_line{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.edit{
+    height: 335px;
+    left:60px;
+    display: none;
+}
+.format{
+    height: 55px;
+    left:110px;
+    display: none;
+}
+.check{
+    height: 55px;
+    left:172px;
+    display: none;
+}
+.help{
+    height: 80px;
+    left:228px;
+    display: none;
+}
