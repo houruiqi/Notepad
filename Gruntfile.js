@@ -18,13 +18,26 @@ module.exports = function(grunt) {
         //     },
         //     target: ['*.js']
         // },
+        // uglify: {
+        //     release:{
+        //       files: {
+        //         './dist/list/list.min.js': './list/list.js',
+        //         './dist/menu/menu.min.js': './menu/menu.js',
+        //         './dist/wordtype/wordtype.min.js': './wordtype/wordtype.js',
+        //         './dist/js/app.min.js':'./js/app.js',
+        //       }
+        //     }       
+        // },
+        concat: {
+          js: {
+            src: ['./js/app.js', './list/list.js','./menu/menu.js','./wordtype/wordtype.js'],
+            dest: './dist/bundle.js'
+          }
+        },
         uglify: {
             release:{
               files: {
-                './dist/list/list.min.js': './list/list.js',
-                './dist/menu/menu.min.js': './menu/menu.js',
-                './dist/wordtype/wordtype.min.js': './wordtype/wordtype.js',
-                './dist/js/app.min.js':'./js/app.js',
+                './dist/bundle.min.js': './dist/bundle.js',
               }
             }       
         },
@@ -45,9 +58,13 @@ module.exports = function(grunt) {
               src: 'index.html',
               dest: './dist/index.html'
             }
-        }
+        },
+        
         
     });
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
+    grunt.registerTask('default', ['concat','htmlmin','cssmin','uglify']);
     // grunt.loadNpmTasks('grunt-htmlhint');
     // grunt.loadNpmTasks('grunt-contrib-csslint');
     // grunt.loadNpmTasks('grunt-eslint');
@@ -55,6 +72,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.registerTask('default',['htmlmin','cssmin','uglify']);
+    // grunt.registerTask('default',['htmlmin','cssmin','uglify']);
     // grunt.registerTask('default',['htmlmin','cssmin','uglify']);
 };
